@@ -3,10 +3,8 @@
         FROM ospiti 
 ●    Selezionare tutti gli ospiti con document type = a CI
        SELECT * 
-FROM ospiti
-WHERE document_type = "ci"
-
-
+        FROM ospiti
+        WHERE document_type = "ci"
 
 ●    Selezionare i paganti che abbiano un ospite id associato
         SELECT * 
@@ -17,10 +15,10 @@ WHERE document_type = "ci"
         FROM stanze
         WHERE floor = 1
 ●    Selezionare tutti gli ospiti che iniziano per E
-    +++++++++++++++++++++++++++++++++++++++++
-
-
-
+        SELECT * 
+        FROM ospiti 
+        WHERE name 
+            LIKE 'E%'
 
 ●    Selezionare tutti gli ospiti che abbiano meno di 30 anni
         SELECT * 
